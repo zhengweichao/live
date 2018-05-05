@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#73696969</item>
+        <item name="colorAccent">@color/AppPrimary</item>
+    </style>
+
+    <style name="BtnTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/common_selector_btn_bg</item>
+    </style>
+</resources>

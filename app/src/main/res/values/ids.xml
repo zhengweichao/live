@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title_bar_back_iv" type="id" />
+    <item name="title_bar_title" type="id" />
+    <item name="layout_title_bar_right_text" type="id" />
+    <item name="layout_title_bar_share" type="id" />
+
+</resources>
