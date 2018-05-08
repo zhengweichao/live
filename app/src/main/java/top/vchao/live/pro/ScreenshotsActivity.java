@@ -28,7 +28,7 @@ import butterknife.OnClick;
 import top.vchao.live.R;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.utils.LogUtils;
-import top.vchao.live.utils.ToastUtil;
+import top.vchao.live.utils.ToastUtils;
 
 public class ScreenshotsActivity extends BaseActivity {
 
@@ -58,12 +58,12 @@ public class ScreenshotsActivity extends BaseActivity {
                         if (CanScreen) {
 
                             LogUtils.e("获取到了截屏的图片" + imagePath);
-                            ToastUtil.showShort(imagePath);
+                            ToastUtils.showShort(imagePath);
                             Glide.with(ScreenshotsActivity.this)
                                     .load(imagePath)
                                     .into(ivScreenshots);
                         } else {
-                            ToastUtil.showShort("当前页面禁止截图！");
+                            ToastUtils.showShort("当前页面禁止截图！");
                             File file = new File(imagePath);
                             file.delete();
 
@@ -93,7 +93,6 @@ public class ScreenshotsActivity extends BaseActivity {
                     if (permissionList != null && (permissionList.size() != 0)) {
                         ActivityCompat.requestPermissions(ScreenshotsActivity.this, permissionList.toArray(new String[permissionList.size()]), 0);
                     }
-
                 }
 
                 break;

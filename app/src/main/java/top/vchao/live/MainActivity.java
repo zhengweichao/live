@@ -7,6 +7,7 @@ import butterknife.OnClick;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.pro.PermissionCheckActivity;
 import top.vchao.live.pro.ScreenshotsActivity;
+import top.vchao.live.pro.TimeSelector.TimeSelectorActivity;
 
 public class MainActivity extends BaseActivity {
 
@@ -25,6 +26,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, PermissionCheckActivity.class));
                 break;
             case R.id.live_bt_test3:
+                startActivity(new Intent(MainActivity.this, TimeSelectorActivity.class));
                 break;
             case R.id.live_bt_test4:
                 break;

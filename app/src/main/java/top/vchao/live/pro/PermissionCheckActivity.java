@@ -16,7 +16,7 @@ import top.vchao.live.constants.SPkey;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.utils.LogUtils;
 import top.vchao.live.utils.NotificationsUtils;
-import top.vchao.live.utils.SystemUtil;
+import top.vchao.live.utils.SystemUtils;
 
 public class PermissionCheckActivity extends BaseActivity {
 
@@ -98,13 +98,13 @@ public class PermissionCheckActivity extends BaseActivity {
 
     private void initAPPinfo() {
 //        APP版本
-        String versionName = SystemUtil.getVersionName(PermissionCheckActivity.this);
+        String versionName = SystemUtils.getVersionName(PermissionCheckActivity.this);
 //        手机型号
-        String systemModel = SystemUtil.getSystemModel();
+        String systemModel = SystemUtils.getSystemModel();
 //        系统版本
-        String systemVersion = SystemUtil.getSystemVersion();
+        String systemVersion = SystemUtils.getSystemVersion();
 //        手机厂商
-        String deviceBrand = SystemUtil.getDeviceBrand();
+        String deviceBrand = SystemUtils.getDeviceBrand();
 
         tvTelInfo.setText("您的手机信息：\nAPP版本： " + versionName + "\n手机信息：  " + deviceBrand + "  " + systemModel + "  \n安卓版本：  " + systemVersion);
     }

@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".pro.ScreenshotsActivity" />
-        <activity android:name=".pro.PermissionCheckActivity"></activity>
+        <activity android:name=".pro.PermissionCheckActivity" />
+        <activity android:name=".pro.TimeSelector.TimeSelectorActivity"></activity>
     </application>
 
 </manifest>

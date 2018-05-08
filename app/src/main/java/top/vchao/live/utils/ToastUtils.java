@@ -16,7 +16,7 @@ import top.vchao.live.myapp.MyApp;
  * @ 描述：吐司工具类
  */
 
-public class ToastUtil {
+public class ToastUtils {
     private static Toast toast;
 
     /**
