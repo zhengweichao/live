@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="AppPrimary">#f03c3b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 白色-->
+    <color name="white">#000000</color>
+    <!-- 黑色-->
+    <color name="black">#ffffff</color>
+    <!-- 透明色-->
+    <color name="transparent">#00000000</color>
+    <!-- 3 度灰-->
+    <color name="gray3">#333333</color>
+    <!-- 6 度灰-->
+    <color name="gray6">#666666</color>
+    <!-- 9 度灰-->
+    <color name="gray9">#999999</color>
+    <!-- d 度灰-->
+    <color name="grayd">#dddddd</color>
+    <!-- f5 度灰-->
+    <color name="grayf5">#f5f5f5</color>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="top.vchao.live.pro.JumpIntentActivity">
+
+    <Button
+        android:id="@+id/jump_market"
+        style="@style/BtnTheme"
+        android:text="跳转应用市场" />
+
+    <Button
+        android:id="@+id/jump_contact"
+        style="@style/BtnTheme"
+        android:text="跳转通讯录" />
+
+    <Button
+        android:id="@+id/jump_call"
+        style="@style/BtnTheme"
+        android:text="拨打电话页面" />
+
+    <Button
+        android:id="@+id/jump_ready_call"
+        style="@style/BtnTheme"
+        android:text="准备拨号页面" />
+
+    <Button
+        android:id="@+id/jump_app_info"
+        style="@style/BtnTheme"
+        android:text="跳转APP信息页面" />
+
+    <Button
+        android:id="@+id/jump_browser"
+        style="@style/BtnTheme"
+        android:text="跳转浏览器" />
+
+    <Button
+        android:id="@+id/jump_install"
+        style="@style/BtnTheme"
+        android:text="APP安装页面" />
+
+    <Button
+        android:id="@+id/jump_uninstall"
+        style="@style/BtnTheme"
+        android:text="APP卸载页面" />
+
+
+</LinearLayout>

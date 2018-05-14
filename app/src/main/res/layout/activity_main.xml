@@ -23,17 +23,43 @@
         <Button
             android:id="@+id/live_bt_test3"
             style="@style/BtnTheme"
-            android:text="测试按钮3" />
+            android:text="时间选择器" />
 
         <Button
             android:id="@+id/live_bt_test4"
             style="@style/BtnTheme"
-            android:text="测试按钮4" />
+            android:text="各种页面跳转" />
 
         <Button
             android:id="@+id/live_bt_test5"
             style="@style/BtnTheme"
-            android:text="测试按钮5" />
+            android:text="徽章" />
+
+        <Button
+            android:id="@+id/live_bt_test6"
+            style="@style/BtnTheme"
+            android:text="夜间模式" />
+
+        <Button
+            android:id="@+id/live_bt_test7"
+            style="@style/BtnTheme"
+            android:text="UI布局优化 " />
+
+        <Button
+            android:id="@+id/live_bt_test8"
+            style="@style/BtnTheme"
+            android:text="测试" />
+
+        <Button
+            android:id="@+id/live_bt_test9"
+            style="@style/BtnTheme"
+            android:text="测试" />
+
+        <Button
+            android:id="@+id/live_bt_test10"
+            style="@style/BtnTheme"
+            android:text="测试" />
+
 
     </LinearLayout>
 

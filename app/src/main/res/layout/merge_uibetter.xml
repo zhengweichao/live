@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/bt_merge1"
+        style="@style/BtnTheme"
+        android:text="merge1" />
+
+    <Button
+        android:id="@+id/bt_merge2"
+        style="@style/BtnTheme"
+        android:text="merge2" />
+</merge>

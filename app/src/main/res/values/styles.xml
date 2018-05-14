@@ -6,6 +6,13 @@
         <item name="colorAccent">@color/AppPrimary</item>
     </style>
 
+    <style name="NightAppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
     <style name="BtnTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">40dp</item>
