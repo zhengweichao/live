@@ -48,7 +48,7 @@
         <Button
             android:id="@+id/live_bt_test8"
             style="@style/BtnTheme"
-            android:text="测试" />
+            android:text="更换图标" />
 
         <Button
             android:id="@+id/live_bt_test9"

@@ -71,11 +71,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity-alias
+            android:name=".icon_tag"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="live"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".icon_tag_1212"
+            android:enabled="false"
+            android:icon="@mipmap/life"
+            android:label="代码练习2"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
             </intent-filter>
         </activity>
         <activity android:name=".pro.ScreenshotsActivity" />
@@ -87,6 +112,10 @@
             android:name=".pro.NightActivity"
             android:theme="@style/NightAppTheme" />
         <activity android:name=".pro.UIbetterActivity" />
+        <activity android:name=".pro.ViewsActivity" />
+        <activity android:name=".pro.charts.ChartsActivity" />
+        <activity android:name=".pro.LayoutTestActivity" />
+        <activity android:name=".pro.ChageIconActivity" />
     </application>
 
 </manifest>
