@@ -53,12 +53,12 @@
         <Button
             android:id="@+id/live_bt_test9"
             style="@style/BtnTheme"
-            android:text="测试" />
+            android:text="序列化测试" />
 
         <Button
             android:id="@+id/live_bt_test10"
             style="@style/BtnTheme"
-            android:text="测试" />
+            android:text=" surface View " />
 
 
     </LinearLayout>

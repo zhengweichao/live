@@ -71,18 +71,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity-alias
-            android:name=".icon_tag"
-            android:enabled="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="live"
-            android:targetActivity=".MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             </intent-filter>
-        </activity-alias>
+        </activity>
 
         <activity-alias
             android:name=".icon_tag_1212"
@@ -92,17 +87,23 @@
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".icon_tag"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="live"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
 
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            </intent-filter>
-        </activity>
         <activity android:name=".pro.ScreenshotsActivity" />
         <activity android:name=".pro.PermissionCheckActivity" />
         <activity android:name=".pro.TimeSelector.TimeSelectorActivity" />
@@ -116,6 +117,32 @@
         <activity android:name=".pro.charts.ChartsActivity" />
         <activity android:name=".pro.LayoutTestActivity" />
         <activity android:name=".pro.ChageIconActivity" />
+        <activity android:name=".pro.ParcelableActivity" />
+        <activity android:name=".pro.SurfaceViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- live://surface -->
+                <data
+                    android:host="surface"
+                    android:scheme="live" />
+            </intent-filter>
+            -
+        </activity>
+        <activity android:name=".pro.WebUpAppActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="test"
+                    android:scheme="live" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
