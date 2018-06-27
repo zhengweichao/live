@@ -8,59 +8,89 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/live_bt_test1"
-            style="@style/BtnTheme"
-            android:text="截图监听" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/live_bt_test2"
-            style="@style/BtnTheme"
-            android:text="运行信息" />
+            <Button
+                android:id="@+id/live_bt_test1"
+                style="@style/BtnTheme"
+                android:text="截图监听" />
 
-        <Button
-            android:id="@+id/live_bt_test3"
-            style="@style/BtnTheme"
-            android:text="时间选择器" />
+            <Button
+                android:id="@+id/live_bt_test2"
+                style="@style/BtnTheme"
+                android:text="运行信息" />
 
-        <Button
-            android:id="@+id/live_bt_test4"
-            style="@style/BtnTheme"
-            android:text="各种页面跳转" />
+            <Button
+                android:id="@+id/live_bt_test3"
+                style="@style/BtnTheme"
+                android:text="时间选择器" />
 
-        <Button
-            android:id="@+id/live_bt_test5"
-            style="@style/BtnTheme"
-            android:text="徽章" />
+            <Button
+                android:id="@+id/live_bt_test4"
+                style="@style/BtnTheme"
+                android:text="各种页面跳转" />
 
-        <Button
-            android:id="@+id/live_bt_test6"
-            style="@style/BtnTheme"
-            android:text="夜间模式" />
+            <Button
+                android:id="@+id/live_bt_test5"
+                style="@style/BtnTheme"
+                android:text="徽章" />
 
-        <Button
-            android:id="@+id/live_bt_test7"
-            style="@style/BtnTheme"
-            android:text="UI布局优化 " />
+            <Button
+                android:id="@+id/live_bt_test6"
+                style="@style/BtnTheme"
+                android:text="夜间模式" />
 
-        <Button
-            android:id="@+id/live_bt_test8"
-            style="@style/BtnTheme"
-            android:text="更换图标" />
+            <Button
+                android:id="@+id/live_bt_test7"
+                style="@style/BtnTheme"
+                android:text="UI布局优化 " />
 
-        <Button
-            android:id="@+id/live_bt_test9"
-            style="@style/BtnTheme"
-            android:text="序列化测试" />
+            <Button
+                android:id="@+id/live_bt_test8"
+                style="@style/BtnTheme"
+                android:text="更换图标" />
 
-        <Button
-            android:id="@+id/live_bt_test10"
-            style="@style/BtnTheme"
-            android:text=" surface View " />
+            <Button
+                android:id="@+id/live_bt_test9"
+                style="@style/BtnTheme"
+                android:text="序列化测试" />
 
+            <Button
+                android:id="@+id/live_bt_test10"
+                style="@style/BtnTheme"
+                android:text=" surface View " />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/live_bt_test20"
+                style="@style/BtnTheme"
+                android:text="撕衣服" />
+
+            <Button
+                android:id="@+id/live_bt_test21"
+                style="@style/BtnTheme"
+                android:text="  " />
+
+            <Button
+                android:id="@+id/live_bt_test22"
+                style="@style/BtnTheme"
+                android:text="  " />
+        </LinearLayout>
 
     </LinearLayout>
+
 
 </ScrollView>

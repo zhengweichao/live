@@ -80,10 +80,10 @@
         </activity>
 
         <activity-alias
-            android:name=".icon_tag"
-            android:enabled="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="live"
+            android:name=".icon_tag_1212"
+            android:enabled="false"
+            android:icon="@mipmap/life"
+            android:label="代码练习2"
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -92,10 +92,10 @@
             </intent-filter>
         </activity-alias>
         <activity-alias
-            android:name=".icon_tag_1212"
-            android:enabled="false"
-            android:icon="@mipmap/life"
-            android:label="代码练习2"
+            android:name=".icon_tag"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="live"
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -145,7 +145,7 @@
         </activity>
         <activity android:name=".pro.SimulationLogin.SimulationLoginActivity" />
         <!-- 桌面小部件 -->
-        <receiver android:name="top.vchao.live.widget.liveWidgetProvider">
+        <receiver android:name=".widget.liveWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -154,7 +154,10 @@
                 android:name="android.appwidget.provider"
                 android:resource="@layout/safer_appwidget_info" />
         </receiver>
+
         <service android:name=".widget.liveWidgetService" />
+
+        <activity android:name=".pro.SiYiFuActivity"></activity>
     </application>
 
 </manifest>
