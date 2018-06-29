@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="top.vchao.live.pro.litepal.LitePalActivity">
+
+    <Button
+        android:id="@+id/lite_pal_create"
+        style="@style/BtnTheme"
+        android:text="创建数据库" />
+
+    <Button
+        android:id="@+id/lite_pal_add"
+        style="@style/BtnTheme"
+        android:text="增加" />
+
+    <Button
+        android:id="@+id/lite_pal_delete"
+        style="@style/BtnTheme"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/lite_pal_update"
+        style="@style/BtnTheme"
+        android:text="修改" />
+
+    <Button
+        android:id="@+id/lite_pal_query"
+        style="@style/BtnTheme"
+        android:text="查询" />
+
+    <TextView
+        android:id="@+id/tv_lite_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库内容" />
+
+</LinearLayout>

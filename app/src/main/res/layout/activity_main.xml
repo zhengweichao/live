@@ -77,15 +77,40 @@
             <Button
                 android:id="@+id/live_bt_test20"
                 style="@style/BtnTheme"
-                android:text="撕衣服" />
+                android:text="刮涂层" />
 
             <Button
                 android:id="@+id/live_bt_test21"
                 style="@style/BtnTheme"
-                android:text="  " />
+                android:text=" 数据库litepal " />
 
             <Button
                 android:id="@+id/live_bt_test22"
+                style="@style/BtnTheme"
+                android:text="udp测试  " />
+
+            <Button
+                android:id="@+id/live_bt_test23"
+                style="@style/BtnTheme"
+                android:text="udp服务端  " />
+
+            <Button
+                android:id="@+id/live_bt_test24"
+                style="@style/BtnTheme"
+                android:text="udp客户端" />
+
+            <Button
+                android:id="@+id/live_bt_test25"
+                style="@style/BtnTheme"
+                android:text="区位码转换" />
+
+            <Button
+                android:id="@+id/live_bt_test26"
+                style="@style/BtnTheme"
+                android:text="  " />
+
+            <Button
+                android:id="@+id/live_bt_test27"
                 style="@style/BtnTheme"
                 android:text="  " />
         </LinearLayout>

@@ -9,6 +9,6 @@ package top.vchao.live.constants;
 public class Config {
     //是否开启调试模式
     public static final boolean DEBUG = true;
-    public static final String LogTag = "qgjt";
+    public static final String LogTag = "vchao";
 
 }

@@ -157,7 +157,17 @@
 
         <service android:name=".widget.liveWidgetService" />
 
-        <activity android:name=".pro.SiYiFuActivity"></activity>
+        <activity android:name=".pro.SiYiFuActivity" />
+        <activity android:name=".pro.litepal.LitePalActivity" />
+        <activity android:name=".pro.serialport.SerialPortActivity" />
+        <activity android:name=".pro.udp.UDPActivity" />
+        <activity
+            android:name=".pro.socket.UDPServerActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".pro.socket.UdpClientActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".pro.hanzi.QuweimaActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="top.vchao.live.pro.serialport.SerialPortActivity">
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="状态"
+        android:textColor="#FFFC1106" />
+
+    <Button
+        android:id="@+id/button_open"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:text="打开串口" />
+
+    <Button
+        android:id="@+id/button_status"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:text="状态" />
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:text="关闭串口" />
+
+    <EditText
+        android:id="@+id/editText_send"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="请输入指令" />
+
+    <Spinner
+        android:id="@+id/spinner_one"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/data"
+        android:spinnerMode="dialog"></Spinner>
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="120sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:text="发送指令" />
+
+</LinearLayout>

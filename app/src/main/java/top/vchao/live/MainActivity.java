@@ -1,12 +1,10 @@
 package top.vchao.live;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
 import java.util.ArrayList;
 
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.pro.BadgeActivity;
@@ -21,6 +19,11 @@ import top.vchao.live.pro.SurfaceViewActivity;
 import top.vchao.live.pro.TimeSelector.TimeSelectorActivity;
 import top.vchao.live.pro.UIbetterActivity;
 import top.vchao.live.pro.bean.User;
+import top.vchao.live.pro.hanzi.QuweimaActivity;
+import top.vchao.live.pro.litepal.LitePalActivity;
+import top.vchao.live.pro.socket.UDPServerActivity;
+import top.vchao.live.pro.socket.UdpClientActivity;
+import top.vchao.live.pro.udp.UDPActivity;
 
 public class MainActivity extends BaseActivity {
 
@@ -31,7 +34,8 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.live_bt_test1, R.id.live_bt_test2, R.id.live_bt_test3, R.id.live_bt_test4, R.id.live_bt_test5,
             R.id.live_bt_test6, R.id.live_bt_test7, R.id.live_bt_test8, R.id.live_bt_test9, R.id.live_bt_test10,
-            R.id.live_bt_test20, R.id.live_bt_test21, R.id.live_bt_test22})
+            R.id.live_bt_test20, R.id.live_bt_test21, R.id.live_bt_test22, R.id.live_bt_test23, R.id.live_bt_test24,
+            R.id.live_bt_test25, R.id.live_bt_test26, R.id.live_bt_test27})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.live_bt_test1:
@@ -76,13 +80,26 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, SiYiFuActivity.class));
                 break;
             case R.id.live_bt_test21:
+                startActivity(new Intent(MainActivity.this, LitePalActivity.class));
                 break;
             case R.id.live_bt_test22:
+                startActivity(new Intent(MainActivity.this, UDPActivity.class));
                 break;
-
+            case R.id.live_bt_test23:
+                startActivity(new Intent(MainActivity.this, UDPServerActivity.class));
+                break;
+            case R.id.live_bt_test24:
+                startActivity(new Intent(MainActivity.this, UdpClientActivity.class));
+                break;
+            case R.id.live_bt_test25:
+                startActivity(new Intent(MainActivity.this, QuweimaActivity.class));
+                break;
+            case R.id.live_bt_test26:
+                break;
+            case R.id.live_bt_test27:
+                break;
         }
     }
-
 
 
 }
