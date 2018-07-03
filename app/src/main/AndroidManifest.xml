@@ -167,7 +167,9 @@
         <activity
             android:name=".pro.socket.UdpClientActivity"
             android:launchMode="singleInstance" />
-        <activity android:name=".pro.hanzi.QuweimaActivity"></activity>
+        <activity android:name=".pro.hanzi.QuweimaActivity" />
+        <activity android:name=".pro.ViewTestActivity" />
+        <activity android:name=".pro.LacCiActivity"></activity>
     </application>
 
 </manifest>

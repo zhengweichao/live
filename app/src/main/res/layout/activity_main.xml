@@ -107,12 +107,12 @@
             <Button
                 android:id="@+id/live_bt_test26"
                 style="@style/BtnTheme"
-                android:text="  " />
+                android:text=" 进度条 " />
 
             <Button
                 android:id="@+id/live_bt_test27"
                 style="@style/BtnTheme"
-                android:text="  " />
+                android:text=" LAC CI获取 " />
         </LinearLayout>
 
     </LinearLayout>
