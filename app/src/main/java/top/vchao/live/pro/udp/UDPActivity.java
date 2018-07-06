@@ -39,7 +39,7 @@ public class UDPActivity extends Activity {
 
     private UdpMessageTool mUdpMessageTool;
     // 服务器主机ip
-    private static final String HOST = "10.10.100.254";
+    private static final String HOST = "172.16.160.37";
     // 服务器请求端口号
     private static final int PORT = 8899;
     // 随便定义的发送内容，发送格式是与服务器端协议

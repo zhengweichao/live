@@ -107,7 +107,7 @@
             <Button
                 android:id="@+id/live_bt_test26"
                 style="@style/BtnTheme"
-                android:text=" 进度条 " />
+                android:text=" new udp " />
 
             <Button
                 android:id="@+id/live_bt_test27"

@@ -23,6 +23,7 @@ import top.vchao.live.pro.ViewTestActivity;
 import top.vchao.live.pro.bean.User;
 import top.vchao.live.pro.hanzi.QuweimaActivity;
 import top.vchao.live.pro.litepal.LitePalActivity;
+import top.vchao.live.pro.newudp.UdpTestActivity;
 import top.vchao.live.pro.socket.UDPServerActivity;
 import top.vchao.live.pro.socket.UdpClientActivity;
 import top.vchao.live.pro.udp.UDPActivity;
@@ -97,7 +98,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, QuweimaActivity.class));
                 break;
             case R.id.live_bt_test26:
-                startActivity(new Intent(MainActivity.this, ViewTestActivity.class));
+//                startActivity(new Intent(MainActivity.this, ViewTestActivity.class));
+                startActivity(new Intent(MainActivity.this, UdpTestActivity.class));
                 break;
             case R.id.live_bt_test27:
                 startActivity(new Intent(MainActivity.this, LacCiActivity.class));

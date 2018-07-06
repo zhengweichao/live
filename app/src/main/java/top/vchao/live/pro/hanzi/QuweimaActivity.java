@@ -12,8 +12,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import top.vchao.live.R;
 import top.vchao.live.utils.CommonUtil;
+import top.vchao.live.utils.Crc16Util;
 import top.vchao.live.utils.LogUtils;
-import top.vchao.live.utils.NewEncodeUtils;
 import top.vchao.live.utils.WordUtil;
 
 public class QuweimaActivity extends AppCompatActivity {
@@ -39,7 +39,7 @@ public class QuweimaActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.button10, R.id.button11})
+    @OnClick({R.id.button10, R.id.button11, R.id.button13})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button10:
@@ -48,6 +48,18 @@ public class QuweimaActivity extends AppCompatActivity {
                 String encode = WordUtil.encode(text);
                 textView6.setText(encode);
                 break;
+            case R.id.button13:
+//                String text2 = CommonUtil.getText(editText3);
+//                LogUtils.e("要转换的内容：  " + text2);
+//                byte[] dd = Crc16Util.getData("FE", "05", "66");
+//                String str = Crc16Util.byteTo16String(dd).toUpperCase();
+
+
+                int crc = Crc16Util.calcCrc16(new byte[]{(byte) 0xFE, 0x05, 0x66});
+
+                textView6.setText(String.format("%04x", crc));
+                break;
+
             case R.id.button11:
                 String text1 = CommonUtil.getText(editText4);
                 LogUtils.e("要转换的内容：  " + text1);

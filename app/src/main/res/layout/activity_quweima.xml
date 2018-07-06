@@ -26,7 +26,7 @@
         android:layout_alignStart="@+id/editText3"
         android:layout_below="@+id/editText3"
         android:layout_marginTop="35dp"
-        android:text="Button" />
+        android:text="区位码" />
 
     <TextView
         android:id="@+id/textView6"
@@ -69,4 +69,13 @@
         android:layout_below="@+id/button11"
         android:layout_marginTop="75dp"
         android:text="TextView" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:text="CRC校验" />
 </RelativeLayout>
