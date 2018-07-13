@@ -113,6 +113,21 @@
                 android:id="@+id/live_bt_test27"
                 style="@style/BtnTheme"
                 android:text=" LAC CI获取 " />
+
+            <Button
+                android:id="@+id/live_bt_test28"
+                style="@style/BtnTheme"
+                android:text="Excel" />
+
+            <Button
+                android:id="@+id/live_bt_test29"
+                style="@style/BtnTheme"
+                android:text="   " />
+
+            <Button
+                android:id="@+id/live_bt_test30"
+                style="@style/BtnTheme"
+                android:text="   " />
         </LinearLayout>
 
     </LinearLayout>

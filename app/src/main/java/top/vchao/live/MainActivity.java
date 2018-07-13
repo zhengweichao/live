@@ -19,8 +19,8 @@ import top.vchao.live.pro.SiYiFuActivity;
 import top.vchao.live.pro.SurfaceViewActivity;
 import top.vchao.live.pro.TimeSelector.TimeSelectorActivity;
 import top.vchao.live.pro.UIbetterActivity;
-import top.vchao.live.pro.ViewTestActivity;
 import top.vchao.live.pro.bean.User;
+import top.vchao.live.pro.excel.ExcelActivity;
 import top.vchao.live.pro.hanzi.QuweimaActivity;
 import top.vchao.live.pro.litepal.LitePalActivity;
 import top.vchao.live.pro.newudp.UdpTestActivity;
@@ -107,5 +107,16 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-
+    @OnClick({R.id.live_bt_test28, R.id.live_bt_test29, R.id.live_bt_test30})
+    public void onViewClicked0(View view) {
+        switch (view.getId()) {
+            case R.id.live_bt_test28:
+                startActivity(new Intent(MainActivity.this, ExcelActivity.class));
+                break;
+            case R.id.live_bt_test29:
+                break;
+            case R.id.live_bt_test30:
+                break;
+        }
+    }
 }
