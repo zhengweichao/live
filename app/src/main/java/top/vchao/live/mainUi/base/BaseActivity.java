@@ -24,7 +24,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //        强制竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        LogUtils.e(getClass().getName() + "-----------onCreate");
+        LogUtils.i(getClass().getName() + "-----------onCreate");
         //得到布局文件
         setContentView(getLayoutId());
         ButterKnife.bind(this);

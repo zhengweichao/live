@@ -45,6 +45,10 @@
         android:id="@+id/jump_uninstall"
         style="@style/BtnTheme"
         android:text="APP卸载页面" />
+    <Button
+        android:id="@+id/ignore_battery"
+        style="@style/BtnTheme"
+        android:text="忽略电池电量优化（23及以上）" />
 
 
 </LinearLayout>

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <!-- 还没有使用到的 -->
@@ -159,7 +160,7 @@
 
         <activity android:name=".pro.SiYiFuActivity" />
         <activity android:name=".pro.litepal.LitePalActivity" />
-        <activity android:name=".pro.serialport.SerialPortActivity" />
+        <activity android:name=".pro.serialport.SerialPortActivitymy" />
         <activity android:name=".pro.udp.UDPActivity" />
         <activity
             android:name=".pro.socket.UDPServerActivity"
@@ -171,7 +172,12 @@
         <activity android:name=".pro.ViewTestActivity" />
         <activity android:name=".pro.LacCiActivity" />
         <activity android:name=".pro.newudp.UdpTestActivity" />
-        <activity android:name=".pro.excel.ExcelActivity"></activity>
+        <activity android:name=".pro.excel.ExcelActivity" />
+        <activity android:name=".pro.SaveLogFileActivity" />
+        <activity android:name="android_serialport_api.sample.SerialPortActivity" />
+        <activity android:name="android_serialport_api.sample.Sending01010101Activity" />
+        <activity android:name="android_serialport_api.sample.SerialPortPreferences" />
+        <activity android:name=".pro.PortActivity"></activity>
     </application>
 
 </manifest>

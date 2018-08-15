@@ -17,7 +17,7 @@ import android_serialport_api.SerialPort;
 import top.vchao.live.R;
 import top.vchao.live.utils.SerialPortUtils;
 
-public class SerialPortActivity extends AppCompatActivity {
+public class SerialPortActivitymy extends AppCompatActivity {
 
     private final String TAG = "SerialPortActivity";
 
@@ -59,11 +59,11 @@ public class SerialPortActivity extends AppCompatActivity {
                 serialPort = serialPortUtils.openSerialPort();
                 if (serialPort == null) {
                     Log.e(TAG, "串口打开失败");
-                    Toast.makeText(SerialPortActivity.this, "串口打开失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SerialPortActivitymy.this, "串口打开失败", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 textView_status.setText("串口已打开");
-                Toast.makeText(SerialPortActivity.this, "串口已打开", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SerialPortActivitymy.this, "串口已打开", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -72,7 +72,7 @@ public class SerialPortActivity extends AppCompatActivity {
             public void onClick(View view) {
                 serialPortUtils.closeSerialPort();
                 textView_status.setText("串口已关闭");
-                Toast.makeText(SerialPortActivity.this, "串口关闭成功", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SerialPortActivitymy.this, "串口关闭成功", Toast.LENGTH_SHORT).show();
             }
         });
         button_send.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +80,7 @@ public class SerialPortActivity extends AppCompatActivity {
             public void onClick(View view) {
                 serialPortUtils.sendSerialPort(editText_send.getText().toString());
                 textView_status.setText("串口发送指令：" + serialPortUtils.data_);
-                Toast.makeText(SerialPortActivity.this, "发送指令：" + editText_send.getText().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(SerialPortActivitymy.this, "发送指令：" + editText_send.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
         button_status.setOnClickListener(new View.OnClickListener() {

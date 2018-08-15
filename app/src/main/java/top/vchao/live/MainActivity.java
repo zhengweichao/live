@@ -5,6 +5,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+import android_serialport_api.sample.SerialPortActivity;
 import butterknife.OnClick;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.pro.BadgeActivity;
@@ -14,6 +15,8 @@ import top.vchao.live.pro.LacCiActivity;
 import top.vchao.live.pro.NightActivity;
 import top.vchao.live.pro.ParcelableActivity;
 import top.vchao.live.pro.PermissionCheckActivity;
+import top.vchao.live.pro.PortActivity;
+import top.vchao.live.pro.SaveLogFileActivity;
 import top.vchao.live.pro.ScreenshotsActivity;
 import top.vchao.live.pro.SiYiFuActivity;
 import top.vchao.live.pro.SurfaceViewActivity;
@@ -24,6 +27,7 @@ import top.vchao.live.pro.excel.ExcelActivity;
 import top.vchao.live.pro.hanzi.QuweimaActivity;
 import top.vchao.live.pro.litepal.LitePalActivity;
 import top.vchao.live.pro.newudp.UdpTestActivity;
+import top.vchao.live.pro.serialport.SerialPortActivitymy;
 import top.vchao.live.pro.socket.UDPServerActivity;
 import top.vchao.live.pro.socket.UdpClientActivity;
 import top.vchao.live.pro.udp.UDPActivity;
@@ -114,8 +118,10 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ExcelActivity.class));
                 break;
             case R.id.live_bt_test29:
+                startActivity(new Intent(MainActivity.this, SaveLogFileActivity.class));
                 break;
             case R.id.live_bt_test30:
+                startActivity(new Intent(MainActivity.this, PortActivity.class));
                 break;
         }
     }

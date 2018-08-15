@@ -71,7 +71,7 @@ public class ExcelActivity extends BaseActivity {
             LogUtils.e("6666666666");
         }
 
-        /*try {ls
+        /*try {
             ExcelUtils.initExcel("test.xls", new String[]{"aa", "bb", "cc"});
             ArrayList<BillObject> billObjects = new ArrayList<>();
             billObjects.add(new BillObject("001", "002", "003"));

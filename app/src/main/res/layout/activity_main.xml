@@ -122,12 +122,12 @@
             <Button
                 android:id="@+id/live_bt_test29"
                 style="@style/BtnTheme"
-                android:text="   " />
+                android:text="保存log" />
 
             <Button
                 android:id="@+id/live_bt_test30"
                 style="@style/BtnTheme"
-                android:text="   " />
+                android:text="串口   " />
         </LinearLayout>
 
     </LinearLayout>
