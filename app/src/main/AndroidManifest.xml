@@ -177,7 +177,9 @@
         <activity android:name="android_serialport_api.sample.SerialPortActivity" />
         <activity android:name="android_serialport_api.sample.Sending01010101Activity" />
         <activity android:name="android_serialport_api.sample.SerialPortPreferences" />
-        <activity android:name=".pro.PortActivity"></activity>
+        <activity android:name=".pro.PortActivity" />
+        <activity android:name=".pro.ui.RetrofitActivity" />
+        <activity android:name=".pro.ui.RxjavaActivity"></activity>
     </application>
 
 </manifest>

@@ -21,19 +21,15 @@ public class PortActivity extends Activity {
     protected OutputStream mOutputStream;
     private ReadThread mReadThread;
 
-    private class ReadThread extends Thread
-    {
+    private class ReadThread extends Thread {
         @Override
-        public void run()
-        {
+        public void run() {
             super.run();
 
-            while(!isInterrupted())
-            {
+            while (!isInterrupted()) {
                 int size;
                 Log.i("test", "接收线程已经开启");
-                try
-                {
+                try {
                     byte[] buffer = new byte[64];
 
                     if (mInputStream == null)
@@ -41,13 +37,10 @@ public class PortActivity extends Activity {
 
                     size = mInputStream.read(buffer);
 
-                    if (size > 0)
-                    {
+                    if (size > 0) {
                         onDataReceived(buffer, size);
                     }
-                }
-                catch (IOException e)
-                {
+                } catch (IOException e) {
                     e.printStackTrace();
                     return;
                 }
@@ -64,7 +57,7 @@ public class PortActivity extends Activity {
             mSerialPort = new SerialPort(new File("/dev/ttyS2"), 9600, 0);
             mInputStream = mSerialPort.getInputStream();
             mOutputStream = mSerialPort.getOutputStream();
-            for(int i = 0; i < Long.MAX_VALUE; i++){
+            for (int i = 0; i < Long.MAX_VALUE; i++) {
                 mOutputStream.write("abcdefghijklmn".getBytes());
                 Log.i("test", "发送成功" + i);
             }
@@ -94,8 +87,8 @@ public class PortActivity extends Activity {
     }
 
     protected void onDataReceived(final byte[] buffer, final int size) {
-        runOnUiThread(new Runnable(){
-            public void run(){
+        runOnUiThread(new Runnable() {
+            public void run() {
                 String recinfo = new String(buffer, 0, size);
                 Log.i("test", "接收到串口信息======" + recinfo.getBytes());
             }

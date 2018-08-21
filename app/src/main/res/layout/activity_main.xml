@@ -128,6 +128,21 @@
                 android:id="@+id/live_bt_test30"
                 style="@style/BtnTheme"
                 android:text="串口   " />
+
+            <Button
+                android:id="@+id/live_bt_test31"
+                style="@style/BtnTheme"
+                android:text=" retrofit " />
+
+            <Button
+                android:id="@+id/live_bt_test32"
+                style="@style/BtnTheme"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/live_bt_test33"
+                style="@style/BtnTheme"
+                android:text="    " />
         </LinearLayout>
 
     </LinearLayout>

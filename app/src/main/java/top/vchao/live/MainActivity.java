@@ -2,10 +2,15 @@ package top.vchao.live;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 
-import android_serialport_api.sample.SerialPortActivity;
+import butterknife.BindView;
 import butterknife.OnClick;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.pro.BadgeActivity;
@@ -22,21 +27,31 @@ import top.vchao.live.pro.SiYiFuActivity;
 import top.vchao.live.pro.SurfaceViewActivity;
 import top.vchao.live.pro.TimeSelector.TimeSelectorActivity;
 import top.vchao.live.pro.UIbetterActivity;
+import top.vchao.live.pro.bean.MessageEvent;
 import top.vchao.live.pro.bean.User;
 import top.vchao.live.pro.excel.ExcelActivity;
 import top.vchao.live.pro.hanzi.QuweimaActivity;
 import top.vchao.live.pro.litepal.LitePalActivity;
 import top.vchao.live.pro.newudp.UdpTestActivity;
-import top.vchao.live.pro.serialport.SerialPortActivitymy;
 import top.vchao.live.pro.socket.UDPServerActivity;
 import top.vchao.live.pro.socket.UdpClientActivity;
 import top.vchao.live.pro.udp.UDPActivity;
+import top.vchao.live.pro.ui.RetrofitActivity;
+import top.vchao.live.utils.LogUtils;
 
 public class MainActivity extends BaseActivity {
+
+    @BindView(R.id.live_bt_test8)
+    Button liveBtTest8;
 
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+        EventBus.getDefault().register(this);
     }
 
     @OnClick({R.id.live_bt_test1, R.id.live_bt_test2, R.id.live_bt_test3, R.id.live_bt_test4, R.id.live_bt_test5,
@@ -111,7 +126,7 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    @OnClick({R.id.live_bt_test28, R.id.live_bt_test29, R.id.live_bt_test30})
+    @OnClick({R.id.live_bt_test28, R.id.live_bt_test29, R.id.live_bt_test30, R.id.live_bt_test31, R.id.live_bt_test32, R.id.live_bt_test33})
     public void onViewClicked0(View view) {
         switch (view.getId()) {
             case R.id.live_bt_test28:
@@ -123,6 +138,25 @@ public class MainActivity extends BaseActivity {
             case R.id.live_bt_test30:
                 startActivity(new Intent(MainActivity.this, PortActivity.class));
                 break;
+            case R.id.live_bt_test31:
+                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
+                break;
+            case R.id.live_bt_test32:
+                break;
+            case R.id.live_bt_test33:
+                break;
         }
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void XXX(MessageEvent messageEvent) {
+        LogUtils.e("EventBus === " + messageEvent.getMessage());
+        liveBtTest8.setText(messageEvent.getMessage());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 }

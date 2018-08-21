@@ -5,10 +5,13 @@ import android.content.pm.PackageManager;
 import android.view.View;
 import android.widget.Button;
 
+import org.greenrobot.eventbus.EventBus;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import top.vchao.live.R;
 import top.vchao.live.mainUi.base.BaseActivity;
+import top.vchao.live.pro.bean.MessageEvent;
 import top.vchao.live.utils.ToastUtils;
 
 public class ChageIconActivity extends BaseActivity {
@@ -29,10 +32,12 @@ public class ChageIconActivity extends BaseActivity {
             case R.id.button4:
                 switchIcon(1);
                 ToastUtils.showShort("更换为java图标 ");
+                EventBus.getDefault().post(new MessageEvent("图标已更换"));
                 break;
             case R.id.button5:
                 switchIcon(2);
                 ToastUtils.showShort("复原");
+                EventBus.getDefault().post(new MessageEvent("更换图标"));
                 break;
         }
     }
