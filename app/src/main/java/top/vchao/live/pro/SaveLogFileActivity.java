@@ -19,21 +19,9 @@ import top.vchao.live.utils.LogUtils;
 
 public class SaveLogFileActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_save_log_file);
-        ButterKnife.bind(this);
-    }
-
-    @OnClick(R.id.button15)
-    public void onViewClicked() {
-        writeLogtoFile("添加一条日志");
-
-    }
     private static void writeLogtoFile(String text) {
-        String path = Environment.getExternalStorageDirectory().getPath()+"/testlog/";
-        LogUtils.i("日志将要保存的路径 ： "+path);
+        String path = Environment.getExternalStorageDirectory().getPath() + "/testlog/";
+        LogUtils.i("日志将要保存的路径 ： " + path);
         Date D = new Date(System.currentTimeMillis());
         SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS", Locale.US);
         String S = SDF.format(D);
@@ -55,5 +43,18 @@ public class SaveLogFileActivity extends Activity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_save_log_file);
+        ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.button15)
+    public void onViewClicked() {
+        writeLogtoFile("添加一条日志");
+
     }
 }

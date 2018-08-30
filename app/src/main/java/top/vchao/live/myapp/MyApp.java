@@ -8,14 +8,14 @@ public class MyApp extends Application {
 
     private static MyApp instance;
 
+    public static MyApp getInstance() {
+        return instance;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
         LitePal.initialize(this);
         instance = this;
-    }
-
-    public static MyApp getInstance() {
-        return instance;
     }
 }
