@@ -107,7 +107,7 @@
             <Button
                 android:id="@+id/live_bt_test26"
                 style="@style/BtnTheme"
-                android:text=" new udp " />
+                android:text="view  " />
 
             <Button
                 android:id="@+id/live_bt_test27"

@@ -27,6 +27,7 @@ import top.vchao.live.pro.SiYiFuActivity;
 import top.vchao.live.pro.SurfaceViewActivity;
 import top.vchao.live.pro.TimeSelector.TimeSelectorActivity;
 import top.vchao.live.pro.UIbetterActivity;
+import top.vchao.live.pro.ViewTestActivity;
 import top.vchao.live.pro.bean.MessageEvent;
 import top.vchao.live.pro.bean.User;
 import top.vchao.live.pro.excel.ExcelActivity;
@@ -117,8 +118,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, QuweimaActivity.class));
                 break;
             case R.id.live_bt_test26:
-//                startActivity(new Intent(MainActivity.this, ViewTestActivity.class));
-                startActivity(new Intent(MainActivity.this, UdpTestActivity.class));
+                startActivity(new Intent(MainActivity.this, ViewTestActivity.class));
+//                startActivity(new Intent(MainActivity.this, UdpTestActivity.class));
                 break;
             case R.id.live_bt_test27:
                 startActivity(new Intent(MainActivity.this, LacCiActivity.class));
