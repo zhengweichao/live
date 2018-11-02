@@ -1,6 +1,8 @@
 package top.vchao.live;
 
+import android.Manifest;
 import android.content.Intent;
+import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.Button;
 
@@ -33,11 +35,11 @@ import top.vchao.live.pro.bean.User;
 import top.vchao.live.pro.excel.ExcelActivity;
 import top.vchao.live.pro.hanzi.QuweimaActivity;
 import top.vchao.live.pro.litepal.LitePalActivity;
-import top.vchao.live.pro.newudp.UdpTestActivity;
 import top.vchao.live.pro.socket.UDPServerActivity;
 import top.vchao.live.pro.socket.UdpClientActivity;
 import top.vchao.live.pro.udp.UDPActivity;
 import top.vchao.live.pro.ui.RetrofitActivity;
+import top.vchao.live.pro.update.UpdateAppManager;
 import top.vchao.live.utils.LogUtils;
 
 public class MainActivity extends BaseActivity {
@@ -53,6 +55,12 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initView() {
         EventBus.getDefault().register(this);
+    }
+
+    @Override
+    public void initData() {
+        // 请求权限
+        ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
     }
 
     @OnClick({R.id.live_bt_test1, R.id.live_bt_test2, R.id.live_bt_test3, R.id.live_bt_test4, R.id.live_bt_test5,
@@ -143,6 +151,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
                 break;
             case R.id.live_bt_test32:
+                UpdateAppManager manager = new UpdateAppManager(MainActivity.this, "main");
+                manager.checkUpdate(MainActivity.this);
                 break;
             case R.id.live_bt_test33:
                 break;

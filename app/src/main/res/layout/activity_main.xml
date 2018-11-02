@@ -137,7 +137,7 @@
             <Button
                 android:id="@+id/live_bt_test32"
                 style="@style/BtnTheme"
-                android:text=" " />
+                android:text=" 更新测试" />
 
             <Button
                 android:id="@+id/live_bt_test33"
