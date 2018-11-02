@@ -85,7 +85,6 @@ public class CircleBarView extends View {
         progressPaint.setStrokeWidth(barWidth);
 
 
-        //省略部分代码...
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleBarView);
 
         //默认为绿色
@@ -112,12 +111,12 @@ public class CircleBarView extends View {
         float y = 50;
         RectF rectF = new RectF(x, y, x + 300, y + 300);//建一个大小为300 * 300的正方形区域
 
-        canvas.drawArc(rectF, 0, sweepAngle, false, progressPaint);
+//        canvas.drawArc(rectF, 0, sweepAngle, false, progressPaint);
 //        canvas.drawArc(rectF, 0, 270, false, progressPaint);//这里角度0对应的是三点钟方向，顺时针方向递增
-        canvas.drawRect(rectF, rPaint);
+//        canvas.drawRect(rectF, rPaint);
 
-        canvas.drawArc(rectF, startAngle, sweepAngle, false, bgPaint);
-        canvas.drawArc(rectF, startAngle, progressSweepAngle, false, progressPaint);
+//        canvas.drawArc(rectF, startAngle, sweepAngle, false, bgPaint);
+//        canvas.drawArc(rectF, startAngle, progressSweepAngle, false, progressPaint);
 
 
         canvas.drawArc(mRectF, startAngle, sweepAngle, false, bgPaint);

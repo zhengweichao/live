@@ -20,13 +20,34 @@
     <top.vchao.live.view.CircleBarView
         android:id="@+id/circle_bar_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <top.vchao.live.view.TemperatureBar
+        android:id="@+id/temperature_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="1111"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/text_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <top.vchao.live.view.MyCircleBar
+        android:id="@+id/my_circle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
         android:layout_centerHorizontal="true" />
 
 </android.support.constraint.ConstraintLayout>

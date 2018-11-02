@@ -11,6 +11,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import top.vchao.live.R;
 import top.vchao.live.view.CircleBarView;
+import top.vchao.live.view.MyCircleBar;
+import top.vchao.live.view.TemperatureBar;
 
 public class ViewTestActivity extends Activity {
 
@@ -20,6 +22,10 @@ public class ViewTestActivity extends Activity {
     CircleBarView circleBarView;
     @BindView(R.id.text_progress)
     TextView textProgress;
+    @BindView(R.id.temperature_bar)
+    TemperatureBar temperatureBar;
+    @BindView(R.id.my_circle_bar)
+    MyCircleBar myCircleBar;
 
 
     @Override
@@ -29,6 +35,7 @@ public class ViewTestActivity extends Activity {
         ButterKnife.bind(this);
 //        circleBarView.setProgressNum(3000);
 //        circleBarView.setProgressNum(100, 3000);
+        temperatureBar.setRsb_temp();
 
         circleBarView.setTextView(textProgress);
         circleBarView.setOnAnimationListener(new CircleBarView.OnAnimationListener() {
@@ -43,6 +50,8 @@ public class ViewTestActivity extends Activity {
 
         progressBarHorizontal.setProgress(80);
         progressBarHorizontal.setSecondaryProgress(88);
+
+        myCircleBar.showProgress(90, 5000);
 //        progressBarHorizontal.incrementProgressBy(10);
 //        progressBarHorizontal.incrementSecondaryProgressBy(10);
     }

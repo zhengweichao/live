@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCircleBar">
+
+        <attr name="circle_ring_angle_type">
+            <enum name="angle_270" value="1"/>
+            <enum name="angle_360" value="2"/>
+        </attr>
+
+        <attr name="circle_ring_width" format="dimension"/>
+        <!-- 显示默认的颜色 -->
+        <attr name="circle_ring_un_reached" format="color"/>
+        <attr name="circle_ring_reached" format="color"/>
+        <attr name="circle_max_progress" format="integer"/>
+        <attr name="circle_show_progress" format="integer"/>
+        <attr name="circle_start_color" format="color"/>
+        <attr name="circle_center_color" format="color"/>
+        <attr name="circle_end_color" format="color"/>
+        <attr name="circle_gradient_on" format="boolean"/>
+        <attr name="circle_hint_text_color" format="color"/>
+        <attr name="circle_show_text_color" format="color"/>
+        <attr name="circle_show_scale_color" format="color"/>
+        <attr name="circle_show_scale_on" format="boolean"/>
+
+    </declare-styleable>
+</resources>
