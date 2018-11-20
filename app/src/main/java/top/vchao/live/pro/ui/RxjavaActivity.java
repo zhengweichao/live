@@ -24,7 +24,7 @@ public class RxjavaActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        // 第一步：初始化Observable   被观察
+        // 第一步：初始化Observable   被观察者（小偷）
         ObservableOnSubscribe observableOnSubscribe = new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<Integer> e) throws Exception {
@@ -39,7 +39,7 @@ public class RxjavaActivity extends BaseActivity {
                 e.onNext(4);
             }
         };
-        // 第二步：初始化Observer  观察
+        // 第二步：初始化Observer  观察（警察）
         Observer observer = new Observer<Integer>() {
             private int i;
             private Disposable mDisposable;

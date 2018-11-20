@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import top.vchao.live.j2xx.J2xxActivity;
 import top.vchao.live.mainUi.base.BaseActivity;
 import top.vchao.live.pro.BadgeActivity;
 import top.vchao.live.pro.ChageIconActivity;
@@ -39,6 +40,7 @@ import top.vchao.live.pro.socket.UDPServerActivity;
 import top.vchao.live.pro.socket.UdpClientActivity;
 import top.vchao.live.pro.udp.UDPActivity;
 import top.vchao.live.pro.ui.RetrofitActivity;
+import top.vchao.live.pro.ui.RxjavaActivity;
 import top.vchao.live.pro.update.UpdateAppManager;
 import top.vchao.live.utils.LogUtils;
 
@@ -66,7 +68,7 @@ public class MainActivity extends BaseActivity {
     @OnClick({R.id.live_bt_test1, R.id.live_bt_test2, R.id.live_bt_test3, R.id.live_bt_test4, R.id.live_bt_test5,
             R.id.live_bt_test6, R.id.live_bt_test7, R.id.live_bt_test8, R.id.live_bt_test9, R.id.live_bt_test10,
             R.id.live_bt_test20, R.id.live_bt_test21, R.id.live_bt_test22, R.id.live_bt_test23, R.id.live_bt_test24,
-            R.id.live_bt_test25, R.id.live_bt_test26, R.id.live_bt_test27})
+            R.id.live_bt_test25, R.id.live_bt_test26, R.id.live_bt_test27, R.id.live_bt_test40})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.live_bt_test1:
@@ -132,6 +134,9 @@ public class MainActivity extends BaseActivity {
             case R.id.live_bt_test27:
                 startActivity(new Intent(MainActivity.this, LacCiActivity.class));
                 break;
+            case R.id.live_bt_test40:
+                startActivity(new Intent(MainActivity.this, J2xxActivity.class));
+                break;
         }
     }
 
@@ -155,6 +160,7 @@ public class MainActivity extends BaseActivity {
                 manager.checkUpdate(MainActivity.this);
                 break;
             case R.id.live_bt_test33:
+                startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
                 break;
         }
     }

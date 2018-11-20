@@ -31,7 +31,7 @@ public class RetrofitActivity extends BaseActivity {
 
         //步骤4:创建Retrofit对象
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://fy.iciba.com/") // 设置 网络请求 Url
+                .baseUrl("http://serve.qhdyzb.cn") // 设置 网络请求 Url
                 .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
                 .build();
 
@@ -48,14 +48,14 @@ public class RetrofitActivity extends BaseActivity {
             public void onResponse(Call<Translation> call, Response<Translation> response) {
                 // 步骤7：处理返回的数据结果
                 Translation body = response.body();
-                ToastUtils.showShort("连接成功");
+                ToastUtils.showShort("请求成功 ");
                 textView12.setText(body.getData().getDescription());
             }
 
             //请求失败时回调
             @Override
             public void onFailure(Call<Translation> call, Throwable throwable) {
-                ToastUtils.showShort("连接失败");
+                ToastUtils.showShort("请求失败 ");
             }
         });
     }

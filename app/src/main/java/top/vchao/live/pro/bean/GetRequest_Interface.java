@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 public interface GetRequest_Interface {
 
     //    @GET("ajax.php?a=fy&f=auto&t=auto&w=hello%20world")
-    @GET("http://serve.qhdyzb.cn/update")
+    @GET("/update")
     Call<Translation> getCall();
 
 // 注解里传入 网络请求 的部分URL地址

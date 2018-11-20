@@ -63,6 +63,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- SD卡读取权限，用户写入离线定位数据 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-feature android:name="android.hardware.usb.host" />
 
     <application
         android:name=".myapp.MyApp"
@@ -81,10 +82,10 @@
         </activity>
 
         <activity-alias
-            android:name=".icon_tag_1212"
-            android:enabled="false"
-            android:icon="@mipmap/life"
-            android:label="代码练习2"
+            android:name=".icon_tag"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="live"
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -93,10 +94,10 @@
             </intent-filter>
         </activity-alias>
         <activity-alias
-            android:name=".icon_tag"
-            android:enabled="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="live"
+            android:name=".icon_tag_1212"
+            android:enabled="false"
+            android:icon="@mipmap/life"
+            android:label="代码练习2"
             android:targetActivity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -130,7 +131,7 @@
                     android:host="surface"
                     android:scheme="live" />
             </intent-filter>
-            -
+
         </activity>
         <activity android:name=".pro.WebUpAppActivity">
             <intent-filter>
@@ -179,7 +180,16 @@
         <activity android:name="android_serialport_api.sample.SerialPortPreferences" />
         <activity android:name=".pro.PortActivity" />
         <activity android:name=".pro.ui.RetrofitActivity" />
-        <activity android:name=".pro.ui.RxjavaActivity"></activity>
+        <activity android:name=".pro.ui.RxjavaActivity" />
+        <activity android:name=".j2xx.J2xxActivity">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
     </application>
 
 </manifest>

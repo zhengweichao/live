@@ -65,6 +65,11 @@
                 android:id="@+id/live_bt_test10"
                 style="@style/BtnTheme"
                 android:text=" surface View " />
+
+            <Button
+                android:id="@+id/live_bt_test40"
+                style="@style/BtnTheme"
+                android:text=" port" />
         </LinearLayout>
 
 
@@ -142,7 +147,7 @@
             <Button
                 android:id="@+id/live_bt_test33"
                 style="@style/BtnTheme"
-                android:text="    " />
+                android:text="   rxjava " />
         </LinearLayout>
 
     </LinearLayout>
